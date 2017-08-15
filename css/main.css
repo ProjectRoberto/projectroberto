@@ -1108,3 +1108,14 @@ article {
   font-family: 'Berkshire Swash', cursive;
   font-size: 50px;
 }
+
+.logo-name{
+  font-family: 'Berkshire Swash', cursive;
+  font-size:60px;
+  color:#1b3ce2;
+  margin-top: -15px;
+}
+
+.logo-name-second{
+  color:#e2dc1b;
+}
