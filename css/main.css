@@ -1158,3 +1158,18 @@ img.chassis-page{
   width: 60%;
   margin-left: 20%;
 }
+
+.new-buttons{
+    background-color: rgba(0,0,0,.1);
+    border-radius: 0.1%;
+    border-width: 1px;
+    border-color: white;
+}
+
+.new-buttons:hover{
+    background-color: rgba(0,0,0,.3);
+    border-radius: 0.1%;
+    border-width: 1px;
+    border-color: white;
+    
+}
