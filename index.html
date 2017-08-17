@@ -316,7 +316,7 @@
                                 <div class="img-wrapper">
                                     <img src="images/qrd.jpg" class="img-responsive" alt="" >
                                     <div class="overlay">
-                                        <button type="button" class="btn btn-primary btn-lg buttons" data-toggle="modal" data-target="#hbridges"> See More </button>
+                                        <button type="button" class="btn btn-primary btn-lg buttons" data-toggle="modal" data-target="#qrd"> See More </button>
                                     </div>
                                 </div>
                                 <figcaption>
@@ -506,6 +506,26 @@
 
                      <img src="images/ir.jpg" class="modal-images  ir-filter-images">
                      <p class="modal-txt">An additional QSD sensor was also used, but this time simply needed an analog input. This QSD served the purpose of identying the zipline beacon. An analog signal was used for this one as the robot would have to drive towards that beacon to reach the zipline, with the signal growing stronger as the robot got closer and closer. The analog functionality was imperative for this operation, and a filtering process was not required.</p>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+                </div>
+            </div>
+            </div>
+        
+        <!-- Modal -->
+            <div class="modal fade" id="qrd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">QRD System</h4>
+                </div>
+                <div class="modal-body">
+                    <p>QRD1114 Sensors were used to detect the black tape placed along the track. They provided guidance for the robot. Four QRD sensors were closely integrated together to assist in the PID control system. They indicated if the robot was just to the left, just to the right, far to the left or far to the right of the track based on what the QRD sensors had detected and the state of the QRD readings in the previous sampling.</p>
+                    <p>The QRD sensors were placed facing down on a sled at the front of the robot. Because the center of mass of the robot was located near the back of the robot, this made it easy for the robot to identify when it needed to turn at junctures along the track.</p>
+
                 </div>
                 <div class="modal-footer">
                     
