@@ -162,6 +162,9 @@
                                 <p>
                                     In addition to the base task of retrieving the agents, the robot has to pass an armed door at the beginning of the track that indicated whether or not it is armed by emitting a 1kHz or 10kHz signal. The robot is allowed to pass through this once is has identified that the door has been disarmed. The agents also start to fall into the water inside the containment after the 60 second mark. Agents will fall in once every 10-15 seconds, making retrieval more challenging. To identify the location of the zipline, and infrared radiation beacon emits a signal. The robot must be able to consider all incoming signals and drive along the path autonomously.
                                 </p>
+                                <p>
+                                    Detailed information about the competiton rules can be found <a href="rules.pdf" target="__blank">here</a></p>
+                                </p>
                             </div>
                             
                         </div>
@@ -550,7 +553,7 @@
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" id="git" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="tinah" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                 <div class="modal-header">
@@ -559,7 +562,41 @@
                 </div>
                 <div class="modal-body">
                     <img src="images/tinah.jpg" class="modal-images">
+                    <div class="modal-txt">
+                        <p>The TINAH board was the main processing head for our robot that controlled the functions of driving, arm maneuvering, QRD analyzing, and QSD monitoring. Some of the key features of the TINAH board were</p>
+                        <ol>
+                            <li>The TINAH had 6 analog pins while the rest of the pins were used for digital signals</li>
+                            <li>Has the capacity to drive motors that do not require as much torque or power</li>
+                            <li>Has dedicated inputs to operate servo motors</li>
+                            <li>Is tolerant to being powered by sources ranging from 9-16V</li>
+                        </ol>
+                        <p>Among other things, further details about the TINAH board can be found <a href="http://projectlab.engphys.ubc.ca/wp-content/uploads/tinah-pinout-reference.pdf">here</a></p>
+                    </div>
                     
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="drive" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">TINAH Board</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="images/code.jpg" class="modal-images" href="https://github.com/ProjectRoberto/roberto">
+                    <div class="modal-txt">
+                        <p>The implemented drive system used by our robot was based on PID control in C++. The QRD1114 sensors provided the input data that would determine the position of the robot with respect to the taped line, and state memory was conserved to identify the location of the robot with respect to the line in the prior sampling. THe QRD's were sampled frequently to determine an "error" between where the robot was supposed to be and where it was. This would then gradually alert the motors to turn back onto the line of the tracks.</p>
+                        <p>The drive system was also used to identify the location of the agents in the containment. Each of the agents were situated on a platform inside a circular containment filled with the water. Normal to the tangent line of where the agents were located was a vertical taped mark. These taped markings were wider than the regular track tape, thus indicated that an agent was located at that point. Determining this point and ensuring the arm (located at an offset from the QRD sensors) could reach the agents was an intended function of the drive system.</p>
+                        <p>Drive system code can be found located in this <a href="https://github.com/ProjectRoberto/roberto/blob/master/tape_reader.cpp">repository file </a></p>
+
+                    </div>
                     
                 </div>
                 <div class="modal-footer">
