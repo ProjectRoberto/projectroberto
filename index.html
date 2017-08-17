@@ -89,17 +89,6 @@
                     <div class="main-menu">
                         <ul class="nav navbar-nav navbar-right">
 
-                            <script>
-                                $('a[href^="#"]').on('click', function(event) {
-                                var target = $(this.getAttribute('href'));
-                                if( target.length ) {
-                                    event.preventDefault();
-                                    $('html, body').animate({scrollTop:$('#mech').position().top}, 'slow');
-                                    $('#mech').focus();
-                                    }
-                                });
-                            </script>
-
                             <li>
                                 <a href="index.html" >Home</a>
                             </li>
@@ -132,12 +121,7 @@
                                 The <span class="robot-name">ROBERTO</span> Project<br>
                             
                                 </h1>
-                                </section> <!-- cd-intro -->
-                                <!-- /.slider -->
-                                <!-- <h2 class="wow fadeInUp animated" data-wow-delay=".6s" >
-                                    With 10 years experience, I've occupied many roles including digital design director,<br> web designer and developer. This site showcases some of my work.
-                                </h2> -->
-                                <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#works" data-section="#works" >View Works</a>
+                                </section> 
                                 
                             </div>
                         </div>
@@ -284,7 +268,7 @@
                                 </div>
                                 <figcaption>
                                 <h4>
-                                <a href="#">
+                                <a data-toggle="modal" data-target="#hbridges" href="#">
                                     H-Bridges
                                 </a>
                                 </h4>
@@ -304,7 +288,7 @@
                                 </div>
                                 <figcaption>
                                 <h4>
-                                <a href="#">
+                                <a data-toggle="modal" data-target="#irfilter" href="#">
                                     IR Filter Circuits
                                 </a>
                                 </h4>
@@ -324,7 +308,7 @@
                                 </div>
                                 <figcaption>
                                 <h4>
-                                <a href="#">
+                                <a data-toggle="modal" data-target="#qrd" href="#">
                                     QRD System
                                 </a>
                                 </h4>
@@ -356,7 +340,7 @@
                                 </div>
                                 <figcaption>
                                 <h4>
-                                <a href="#">
+                                <a data-toggle="modal" data-target="#git" href="#">
                                     Source Control & Tools
                                 </a>
                                 </h4>
@@ -376,7 +360,7 @@
                                 </div>
                                 <figcaption>
                                 <h4>
-                                <a href="#">
+                                <a data-toggle="modal" data-target="#tinah" href="#">
                                     TINAH Board
                                 </a>
                                 </h4>
@@ -396,7 +380,7 @@
                                 </div>
                                 <figcaption>
                                 <h4>
-                                <a href="#">
+                                <a data-toggle="modal" data-target="#drive" href="#">
                                     Drive System
                                 </a>
                                 </h4>
@@ -587,10 +571,10 @@
                 <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">TINAH Board</h4>
+                    <h4 class="modal-title" id="myModalLabel">Drive System</h4>
                 </div>
                 <div class="modal-body">
-                    <img src="images/code.jpg" class="modal-images" href="https://github.com/ProjectRoberto/roberto">
+                    <a href="https://github.com/ProjectRoberto/roberto"><img src="images/code.jpg" class="modal-images" ></a>
                     <div class="modal-txt">
                         <p>The implemented drive system used by our robot was based on PID control in C++. The QRD1114 sensors provided the input data that would determine the position of the robot with respect to the taped line, and state memory was conserved to identify the location of the robot with respect to the line in the prior sampling. THe QRD's were sampled frequently to determine an "error" between where the robot was supposed to be and where it was. This would then gradually alert the motors to turn back onto the line of the tracks.</p>
                         <p>The drive system was also used to identify the location of the agents in the containment. Each of the agents were situated on a platform inside a circular containment filled with the water. Normal to the tangent line of where the agents were located was a vertical taped mark. These taped markings were wider than the regular track tape, thus indicated that an agent was located at that point. Determining this point and ensuring the arm (located at an offset from the QRD sensors) could reach the agents was an intended function of the drive system.</p>
