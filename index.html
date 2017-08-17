@@ -348,10 +348,7 @@
                                 <div class="img-wrapper">
                                     <img src="images/software.png" class="img-responsive" alt="this is a title" >
                                     <div class="overlay">
-                                        <div class="buttons">
-                                            <!-- <a rel="gallery" class="fancybox" href="images/portfolio/item-1.jpg">Demo</a> -->
-                                            <a href="single-portfolio.html">See More</a>
-                                        </div>
+                                        <button type="button" class="btn btn-primary btn-lg buttons" data-toggle="modal" data-target="#git"> See More </button>
                                     </div>
                                 </div>
                                 <figcaption>
@@ -371,10 +368,7 @@
                                 <div class="img-wrapper">
                                     <img src="images/tinah.jpg" class="img-responsive" alt="this is a title" >
                                     <div class="overlay">
-                                        <div class="buttons">
-                                           <!-- <a rel="gallery" class="fancybox" href="images/portfolio/item-2.jpg">Demo</a> -->
-                                            <a href="single-portfolio.html">See More</a>
-                                        </div>
+                                        <button type="button" class="btn btn-primary btn-lg buttons" data-toggle="modal" data-target="#tinah"> See More </button>
                                     </div>
                                 </div>
                                 <figcaption>
@@ -394,10 +388,7 @@
                                 <div class="img-wrapper">
                                     <img src="images/pid.jpg" class="img-responsive" alt="" >
                                     <div class="overlay">
-                                        <div class="buttons">
-                                            <!-- <a rel="gallery" class="fancybox" href="images/portfolio/item-3.jpg">Demo</a> -->
-                                            <a target="_blank" href="single-portfolio.html">Details</a>
-                                        </div>
+                                        <button type="button" class="btn btn-primary btn-lg buttons" data-toggle="modal" data-target="#drive"> See More </button>
                                     </div>
                                 </div>
                                 <figcaption>
@@ -523,9 +514,33 @@
                     <h4 class="modal-title" id="myModalLabel">QRD System</h4>
                 </div>
                 <div class="modal-body">
+                    <img src="images/qrd2.jpg" class="modal-images">
+                    <div class="modal-txt">
                     <p>QRD1114 Sensors were used to detect the black tape placed along the track. They provided guidance for the robot. Four QRD sensors were closely integrated together to assist in the PID control system. They indicated if the robot was just to the left, just to the right, far to the left or far to the right of the track based on what the QRD sensors had detected and the state of the QRD readings in the previous sampling.</p>
                     <p>The QRD sensors were placed facing down on a sled at the front of the robot. Because the center of mass of the robot was located near the back of the robot, this made it easy for the robot to identify when it needed to turn at junctures along the track.</p>
-
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+                </div>
+            </div>
+            </div> 
+        
+            <!-- Modal -->
+            <div class="modal fade" id="git" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Source Code Control</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="images/projectroberto.JPG" class="modal-images">
+                    <div class="modal-txt">
+                    <p>Our microcprocessor, the TINAH board is loosely based off the Wiring board and uses Arduino (.ino) and C++ coding. Naturally, we utilized the Arduino IDE along with <a href="https://github.com/ProjectRoberto">GitHub</a> for source code control.</p>
+                    <p>The main source of our code is divided into two components - one that handles tape following based events, such as identifying the location of the tracks as well as identifying where the agents are placed, and a second component that handles other robot actions, such as diverting attention to the signals from the beacons, operating the claw and driving to the zipline. All of the source code is located in this <a href="https://github.com/ProjectRoberto/roberto">repository </a></p>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     
@@ -534,5 +549,24 @@
             </div>
             </div>
 
+            <!-- Modal -->
+            <div class="modal fade" id="git" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">TINAH Board</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="images/tinah.jpg" class="modal-images">
+                    
+                    
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+                </div>
+            </div>
+            </div>
         </body>
     </html>
