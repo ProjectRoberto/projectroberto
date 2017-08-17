@@ -275,9 +275,7 @@
                                         </div>-->
 
                                         <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary btn-lg buttons" data-toggle="modal" data-target="#hbridges">
-                                        Launch demo modal
-                                        </button>
+                                        <button type="button" class="btn btn-primary btn-lg buttons" data-toggle="modal" data-target="#hbridges"> See More </button>
                                        
                                     </div>
                                 </div>
@@ -298,10 +296,7 @@
                                 <div class="img-wrapper">
                                     <img src="images/ir.jpg" class="img-responsive" alt="this is a title" >
                                     <div class="overlay">
-                                        <div class="buttons">
-                                           <!-- <a rel="gallery" class="fancybox" href="images/portfolio/item-2.jpg">Demo</a> -->
-                                            <a href="single-portfolio.html">See More</a>
-                                        </div>
+                                        <button type="button" class="btn btn-primary btn-lg buttons" data-toggle="modal" data-target="#irfilter"> See More </button>
                                     </div>
                                 </div>
                                 <figcaption>
@@ -321,10 +316,7 @@
                                 <div class="img-wrapper">
                                     <img src="images/qrd.jpg" class="img-responsive" alt="" >
                                     <div class="overlay">
-                                        <div class="buttons">
-                                            <!-- <a rel="gallery" class="fancybox" href="images/portfolio/item-3.jpg">Demo</a> -->
-                                            <a target="_blank" href="single-portfolio.html">Details</a>
-                                        </div>
+                                        <button type="button" class="btn btn-primary btn-lg buttons" data-toggle="modal" data-target="#hbridges"> See More </button>
                                     </div>
                                 </div>
                                 <figcaption>
@@ -497,11 +489,11 @@
                 <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">H Bridges</h4>
+                    <h4 class="modal-title" id="myModalLabel">IR Filter Circuits</h4>
                 </div>
                 <div class="modal-body">
-                     <img>
-                     <div>
+                     <img src="images/irfilter.jpg" class="modal-images">
+                     <div class="modal-txt">
                          <p>At the beginning of the track, our robot has to pass through an armed door, that indicates whether it is armed or disarmed through the use of an IR signal at different frequencies. An IR signal at 10kHz indicates that the door is disarmed, thus allowing the robot to pass through without triggering an alarm. Any other frequency denotes the door is armed. While it would be very simple to feed the signal from a QSD (IR signal detector) sensor into the TINAH board and allow the microprocessor to determine whether or not a 10kHz is available, we had a limited number of analog input pins. Therefore, we constructed an IR signal filter and detection circuit to provide either a logical high signal for a 10kHz signal and a low signal for all other frequencies</p>
                          <p>The circuit consisted of the following components</p>
                          <ol>
@@ -509,10 +501,11 @@
                              <li>Signal filter - using a band pass filter constructed of both a high pass filter and a low pass filter, we ensured that the range over which the dB/dec roll off was narrow enough to only recognize a 10kHz signal as an input.</li>
                              <li>Peak detector - Based on the signal of the output wave, we designed a peak detector to generate a digital signal from an analog sine wave that could be fed into the TINAH board as indication of a 10kHz sine wave.</li>
                          </ol>
+                        
                      </div>
 
-                     <img>
-                     <p>An additional QSD sensor was also used, but this time simply needed an analog input. This QSD served the purpose of identying the zipline beacon. An analog signal was used for this one as the robot would have to drive towards that beacon to reach the zipline, with the signal growing stronger as the robot got closer and closer. The analog functionality was imperative for this operation, and a filtering process was not required.</p>
+                     <img src="images/ir.jpg" class="modal-images  ir-filter-images">
+                     <p class="modal-txt">An additional QSD sensor was also used, but this time simply needed an analog input. This QSD served the purpose of identying the zipline beacon. An analog signal was used for this one as the robot would have to drive towards that beacon to reach the zipline, with the signal growing stronger as the robot got closer and closer. The analog functionality was imperative for this operation, and a filtering process was not required.</p>
                 </div>
                 <div class="modal-footer">
                     
