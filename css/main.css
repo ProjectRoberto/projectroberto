@@ -1119,3 +1119,17 @@ article {
 .logo-name-second{
   color:#e2dc1b;
 }
+
+img.chassis-page{
+  width: 60%;
+  height: auto;
+  
+}
+
+.chassis-header{
+  background: url(../images/roberto.jpg);
+}
+
+.premise{
+  text-align: center;
+}
